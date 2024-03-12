@@ -1,0 +1,124 @@
+
+:root{
+    --typography-font-family: "Inter", sans-serif;
+  }
+  html{
+    font-family:var(--typography-font-family)
+  }
+
+  body{
+    background-color: #222831;
+  }
+  .title{
+    font-size:16px;
+    font-weight:700;
+    line-height:22px;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+  .text-white{
+    color: #fff;
+  }
+  h1{
+    font-size:4rem;
+    font-weight:700;
+    line-height:70px
+  }
+
+
+
+  .caption{
+    font-size:12px;
+    font-weight:400;
+    line-height:18px;
+  }
+
+  #megaDeals{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.flexed-asset {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-deal a,
+.mega-deal .section-img {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (3 / 4));
+    position: relative;
+}
+
+.mega-deal .mega-deal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.cd-section-img {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (9 / 16));
+    position: relative;
+}
+
+.mega-deals-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.days,
+.hours,
+.seconds,
+.minutes {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+
+.offer-countdown-timer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .5em;
+}
+
+#timer {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    background: #ffc300;
+    height: 100%;
+    padding: 4px 0;
+}
+
+
+
+@media screen and (max-width:576px) {
+    #timer {
+    min-height: 3.5em;
+    }
+}
+@media screen and (min-width:576px) {
+    .mega-deals-container {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .mega-deals-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
